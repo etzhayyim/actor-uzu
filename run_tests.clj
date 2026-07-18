@@ -1,0 +1,26 @@
+(require '[clojure.test :as t])
+
+(def suites
+  '[uzu.methods.test-model
+    uzu.methods.test-ledger
+    uzu.methods.test-metabolism
+    uzu.methods.test-epochs
+    uzu.methods.test-world
+    uzu.methods.test-landscape
+    uzu.methods.test-measure
+    uzu.methods.test-validate
+    uzu.methods.test-lexicons
+    uzu.methods.test-digest
+    uzu.methods.test-robustness
+    uzu.methods.test-properties
+    uzu.methods.test-scorecard
+    uzu.methods.test-kotoba
+    uzu.methods.test-query
+    uzu.methods.test-autorun
+    uzu.methods.test-viz
+    uzu.repository-contract-test])
+
+(apply require suites)
+(let [{:keys [fail error]} (apply t/run-tests suites)]
+  (when-not (zero? (+ fail error))
+    (System/exit 1)))

@@ -9,7 +9,7 @@
 |---|---|---|
 | 1 | ADR accepted | ✅ ADR-2606211500 |
 | 2 | manifest.edn (clj-native, gates, non-goals) | ✅ 9 gates / 5 non-goals |
-| 3 | ontology (kotoba EAVT schema + invariants) | ✅ `kotoba/ontology.uzu.edn` (5 invariants) |
+| 3 | ontology (kotoba EAVT schema + invariants) | ✅ `schema/ontology.uzu.edn` (5 invariants) |
 | 4 | seed (tape + organisms + measured flows) | ✅ 12 steps · 3 organisms · 11 flows · 15 edges |
 | 5 | generative model (VFE infer + EFE plan) | ✅ `model.cljc` |
 | 6 | energy ledger (intake/cost/hazard/death) | ✅ `ledger.cljc` |

@@ -12,7 +12,7 @@
   makes the log tamper-evident (verify-chain). Deterministic: caller supplies tx-id +
   as-of (no wall clock) → resume-safe. No-server-key: this writer holds no key and does
   NO network I/O — it only appends to a local file."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (defn add [entity attr value] [":db/add" entity attr value])

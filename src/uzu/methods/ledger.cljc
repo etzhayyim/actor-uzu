@@ -17,7 +17,7 @@
   Coupling map f: an action choice (information, from model/choose) ⇒ an energy cost
   here. Intake depends on the TRUE regime (the world), not the belief — you can only
   eat what is actually there, however you read it."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def default-costs
   "The metabolic price list (energy units). basal+inference are paid every live beat;

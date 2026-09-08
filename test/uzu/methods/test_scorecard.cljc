@@ -4,7 +4,7 @@
 (ns uzu.methods.test-scorecard
   (:require [uzu.methods.scorecard :as sc]
             [clojure.edn :as edn]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (def manifest (edn/read-string (slurp "manifest.edn")))

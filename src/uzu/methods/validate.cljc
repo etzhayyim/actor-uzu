@@ -16,7 +16,7 @@
     • circulation endpoints resolve + :cross-class flag matches the actual
       from/to class difference                                             (the coupling graph)
     • circulation is a closed loop (every flow has an out-edge)            (open system circulates)"
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [uzu.methods.uzu-edn :as ue]
             #?(:clj [clojure.edn :as edn])
             #?(:clj [clojure.java.io :as io])))

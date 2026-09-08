@@ -4,7 +4,7 @@
 (ns uzu.methods.test-landscape
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.landscape :as ls]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (def meanings (mapv #(select-keys % [:id :prefs]) (ue/organisms "data/seed.kotoba.edn")))

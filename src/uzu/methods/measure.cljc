@@ -29,7 +29,7 @@
   :representative. Live ingest from the observatory siblings (kasa compute/energy, kanjō
   financials, shionome capital flows, busshi commodities, hikari grid, spirit-in-physics
   霊性) is a G7-gated operator step — the loop here reads a local seed and does no network."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 

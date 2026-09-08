@@ -8,7 +8,7 @@
   first n transactions), the way a Datom log is meant to be read (ADR-2605312345). Pure folds
   over datom/tx vectors; :clj only reads the file via kotoba/read-log. No network (no-server-key)."
   (:require [uzu.methods.kotoba :as k]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (defn index
   "Fold a flat datom seq ([op entity attr value]) into {entity {attr value}} (last write wins).

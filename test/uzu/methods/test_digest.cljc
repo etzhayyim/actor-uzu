@@ -6,7 +6,7 @@
             [uzu.methods.metabolism :as metab]
             [uzu.methods.measure :as measure]
             [uzu.methods.digest :as dg]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (def seed (ue/classify (ue/load-edn "data/seed.kotoba.edn")))

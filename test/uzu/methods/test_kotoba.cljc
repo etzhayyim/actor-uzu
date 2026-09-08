@@ -2,7 +2,7 @@
 ;; uzu 渦 — information-log (content-addressed commit-DAG) tests.
 ;; Run: bb --classpath 20-actors ./methods/test_kotoba.cljc
 (ns uzu.methods.test-kotoba
-  (:require [uzu.methods.kotoba :as k]
+  (:require [kotoba.lang.text] [uzu.methods.kotoba :as k]
             [clojure.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]))
 
@@ -35,7 +35,7 @@
     (k/append-tx (k/make-tx ds2 "t2" "a2" (k/head-cid p)) p)
     (is (:ok (k/verify-chain p)) "a well-formed chain verifies")
     ;; corrupt the file: flip a value
-    (spit p (clojure.string/replace (slurp p) "6.6" "9.9"))
+    (spit p (kotoba.lang.text/replace (slurp p) "6.6" "9.9"))
     (is (false? (:ok (k/verify-chain p))) "a tampered datom breaks the content-address")
     (.delete (io/file p))))
 

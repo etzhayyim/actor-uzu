@@ -11,7 +11,7 @@
   die everywhere). Pure + deterministic; no network (no-server-key)."
   (:require [uzu.methods.metabolism :as metab]
             [uzu.methods.world :as world]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (defn default-niches []
   [["abundant" (world/abundant-world)]

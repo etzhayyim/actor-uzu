@@ -18,7 +18,7 @@
   Pure string generation; :clj does the file write. No network, no-server-key."
   (:require [uzu.methods.measure :as measure]
             [uzu.methods.metabolism :as metab]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             #?(:clj [clojure.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 

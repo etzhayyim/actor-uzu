@@ -25,7 +25,7 @@
   value (resolve uncertainty). Because C is the only subject-specific term, the SAME
   perception drives DIFFERENT actions in two organisms with different C — meaning is
   subject-dependent, by construction (test-enforced)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def regimes [:scarce :benign :abundant :hostile])
 

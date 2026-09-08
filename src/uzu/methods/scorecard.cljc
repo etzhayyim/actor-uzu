@@ -9,7 +9,7 @@
   exists on disk — catching manifest↔filesystem drift structurally. Pure tally; :clj does the
   existence checks. No network (no-server-key). It does not run the tests (that would shell out
   + be circular); it reports the manifest's declared test status and verifies the files are there."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 

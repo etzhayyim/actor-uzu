@@ -15,7 +15,7 @@
   measures, and physical dissipation is the only flow class with a waste-heat reading (G2/G3)."
   (:require [uzu.methods.metabolism :as metab]
             [uzu.methods.measure :as measure]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (defn- r3 [x] (/ (Math/round (* 1000.0 (double x))) 1000.0))
 (defn- mean [xs] (if (seq xs) (r3 (/ (reduce + (map double xs)) (count xs))) 0.0))

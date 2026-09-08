@@ -16,7 +16,7 @@
   (conserved; depleting)."
   (:require [uzu.methods.model :as model]
             [uzu.methods.ledger :as ledger]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (defn init-organism
   "Build a fresh organism state from a config map

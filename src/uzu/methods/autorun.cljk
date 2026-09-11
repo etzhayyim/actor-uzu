@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — autonomous heartbeat: live the organisms + measure the field → append to the log.
 (ns uzu.methods.autorun
   "autorun.cljc — uzu 渦 deterministic heartbeat (ADR-2606211500).

@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — generative-model tests (incl. the subject-dependence-of-meaning invariant).
-;; Run: bb --classpath 20-actors ./methods/test_model.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_model.cljc
 (ns uzu.methods.test-model
   (:require [uzu.methods.model :as m]
             [clojure.test :refer [deftest is run-tests]]))

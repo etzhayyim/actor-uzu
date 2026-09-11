@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — generative model: the INFORMATION half (free energy in nats, not joules).
 (ns uzu.methods.model
   "model.cljc — uzu 渦 generative model + free-energy machinery (ADR-2606211500).

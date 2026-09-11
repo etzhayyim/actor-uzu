@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — visualization: render the measured energy field + organism life to one canvas.
 (ns uzu.methods.viz
   "viz.cljc — uzu 渦 energy-field visualization generator (ADR-2606211500).

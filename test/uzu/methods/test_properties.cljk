@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — sharp cross-cutting property tests (invariants the design implies but stated nowhere else).
-;; Run: bb --classpath 20-actors ./methods/test_properties.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_properties.cljc
 (ns uzu.methods.test-properties
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.model :as mo]

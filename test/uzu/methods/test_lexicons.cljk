@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — lexicon ↔ manifest ↔ ontology parity (structurally forbids vocab drift).
-;; Run: bb --classpath 20-actors ./methods/test_lexicons.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_lexicons.cljc
 (ns uzu.methods.test-lexicons
   (:require [clojure.edn :as edn]
             [clojure.test :refer [deftest is run-tests]]

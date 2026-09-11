@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — energy-ledger tests (conserved/depleting; the energy half).
-;; Run: bb --classpath 20-actors ./methods/test_ledger.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_ledger.cljc
 (ns uzu.methods.test-ledger
   (:require [uzu.methods.ledger :as l]
             [clojure.test :refer [deftest is run-tests]]))

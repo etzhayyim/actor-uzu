@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — seed-integrity validator tests.
-;; Run: bb --classpath 20-actors ./methods/test_validate.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_validate.cljc
 (ns uzu.methods.test-validate
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.validate :as v]

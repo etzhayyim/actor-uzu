@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — viability envelope: which MEANINGS survive which NICHES (a fitness matrix).
 (ns uzu.methods.landscape
   "landscape.cljc — uzu 渦 viability-envelope survey (ADR-2606211500).

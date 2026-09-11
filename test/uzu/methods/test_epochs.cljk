@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — multi-epoch (seasons) life tests: a net-negative world starves even the fittest.
-;; Run: bb --classpath 20-actors ./methods/test_epochs.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_epochs.cljc
 (ns uzu.methods.test-epochs
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.metabolism :as metab]

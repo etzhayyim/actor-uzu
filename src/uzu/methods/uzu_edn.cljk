@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — seed loader + classifier (clj-native, pure stdlib).
 (ns uzu.methods.uzu-edn
   "uzu 渦 — load + classify the seed substrate (ADR-2606211500).

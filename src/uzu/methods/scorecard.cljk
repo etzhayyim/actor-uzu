@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — maturity self-audit: the actor reports + verifies its own inventory.
 (ns uzu.methods.scorecard
   "scorecard.cljc — uzu 渦 maturity self-audit (ADR-2606211500).

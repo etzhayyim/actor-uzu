@@ -35,20 +35,20 @@
   {:n/id "N5" :n/rule "Not a per-person attention/affect tracker — population aggregates only"}]
 
  :actor/methods
- [{:method/id "uzu_edn"    :method/file "src/uzu/methods/uzu_edn.cljc"    :method/role "seed loader + classify (tape / organisms / flows / edges)"}
-  {:method/id "model"      :method/file "src/uzu/methods/model.cljc"      :method/role "generative model: belief update (VFE), expected-free-energy action choice; INFORMATION (nats)"}
-  {:method/id "ledger"     :method/file "src/uzu/methods/ledger.cljc"     :method/role "metabolic energy ledger: intake/cost/hazard/affordability; ENERGY (conserved)"}
-  {:method/id "metabolism" :method/file "src/uzu/methods/metabolism.cljc" :method/role "the dissipative loop: perceive→infer→plan→act→metabolize→live-or-die; multi-epoch seasons (live-epochs); EAVT datoms"}
-  {:method/id "measure"    :method/file "src/uzu/methods/measure.cljc"    :method/role "real-world energy-flow measurement in 4 honest separate units; never cross-summed; EAVT datoms"}
-  {:method/id "world"      :method/file "src/uzu/methods/world.cljc"      :method/role "deterministic world-tape generator (niches): abundant/scarce/mixed presets + richness — proves a good model needs a net-positive niche (+ bb CLI)"}
-  {:method/id "landscape"  :method/file "src/uzu/methods/landscape.cljc"  :method/role "viability ENVELOPE: sweep meaning × niche → survival matrix; fitness is joint (a pathology is harmless in a niche that never punishes it) → report + :uzu.landscape/* datoms (+ bb CLI)"}
-  {:method/id "validate"   :method/file "src/uzu/methods/validate.cljc"   :method/role "seed↔ontology integrity validator (self-validating substrate; defends I1–I5 invariants; + bb CLI)"}
-  {:method/id "digest"     :method/file "src/uzu/methods/digest.cljc"     :method/role "colony SELF-REFLECTION: who self-maintained, which meanings fit, energy economy, field dissipation → report + :uzu.digest/* datoms (+ bb CLI; Murakumo narration is the gated step)"}
-  {:method/id "scorecard"  :method/file "src/uzu/methods/scorecard.cljc"  :method/role "maturity SELF-AUDIT: tally inventory + verify every declared method/suite/lexicon file exists (manifest↔fs drift) → report + :uzu.scorecard/* datoms (+ bb CLI)"}
-  {:method/id "viz"        :method/file "src/uzu/methods/viz.cljc"        :method/role "self-contained data-driven HTML canvas of the coupled energy field + organism trajectories (+ bb CLI)"}
-  {:method/id "kotoba"     :method/file "src/uzu/methods/kotoba.cljc"     :method/role "content-addressed append-only INFORMATION log (tx-cid/make-tx/append-tx/read-log/verify-chain)"}
-  {:method/id "query"      :method/file "src/uzu/methods/query.cljc"      :method/role "log READ path: fold EAVT datoms → entity views + AS-OF time-travel (the log is queryable, not write-only) (+ bb CLI)"}
-  {:method/id "autorun"    :method/file "src/uzu/methods/autorun.cljc"    :method/role "deterministic heartbeat: live organisms + measure field + SELF-REFLECT (digest) → append datoms to the log (+ bb CLI)"}]
+ [{:method/id "uzu_edn"    :method/file "src/uzu/methods/uzu_edn.cljk"    :method/role "seed loader + classify (tape / organisms / flows / edges)"}
+  {:method/id "model"      :method/file "src/uzu/methods/model.cljk"      :method/role "generative model: belief update (VFE), expected-free-energy action choice; INFORMATION (nats)"}
+  {:method/id "ledger"     :method/file "src/uzu/methods/ledger.cljk"     :method/role "metabolic energy ledger: intake/cost/hazard/affordability; ENERGY (conserved)"}
+  {:method/id "metabolism" :method/file "src/uzu/methods/metabolism.cljk" :method/role "the dissipative loop: perceive→infer→plan→act→metabolize→live-or-die; multi-epoch seasons (live-epochs); EAVT datoms"}
+  {:method/id "measure"    :method/file "src/uzu/methods/measure.cljk"    :method/role "real-world energy-flow measurement in 4 honest separate units; never cross-summed; EAVT datoms"}
+  {:method/id "world"      :method/file "src/uzu/methods/world.cljk"      :method/role "deterministic world-tape generator (niches): abundant/scarce/mixed presets + richness — proves a good model needs a net-positive niche (+ bb CLI)"}
+  {:method/id "landscape"  :method/file "src/uzu/methods/landscape.cljk"  :method/role "viability ENVELOPE: sweep meaning × niche → survival matrix; fitness is joint (a pathology is harmless in a niche that never punishes it) → report + :uzu.landscape/* datoms (+ bb CLI)"}
+  {:method/id "validate"   :method/file "src/uzu/methods/validate.cljk"   :method/role "seed↔ontology integrity validator (self-validating substrate; defends I1–I5 invariants; + bb CLI)"}
+  {:method/id "digest"     :method/file "src/uzu/methods/digest.cljk"     :method/role "colony SELF-REFLECTION: who self-maintained, which meanings fit, energy economy, field dissipation → report + :uzu.digest/* datoms (+ bb CLI; Murakumo narration is the gated step)"}
+  {:method/id "scorecard"  :method/file "src/uzu/methods/scorecard.cljk"  :method/role "maturity SELF-AUDIT: tally inventory + verify every declared method/suite/lexicon file exists (manifest↔fs drift) → report + :uzu.scorecard/* datoms (+ bb CLI)"}
+  {:method/id "viz"        :method/file "src/uzu/methods/viz.cljk"        :method/role "self-contained data-driven HTML canvas of the coupled energy field + organism trajectories (+ bb CLI)"}
+  {:method/id "kotoba"     :method/file "src/uzu/methods/kotoba.cljk"     :method/role "content-addressed append-only INFORMATION log (tx-cid/make-tx/append-tx/read-log/verify-chain)"}
+  {:method/id "query"      :method/file "src/uzu/methods/query.cljk"      :method/role "log READ path: fold EAVT datoms → entity views + AS-OF time-travel (the log is queryable, not write-only) (+ bb CLI)"}
+  {:method/id "autorun"    :method/file "src/uzu/methods/autorun.cljk"    :method/role "deterministic heartbeat: live organisms + measure field + SELF-REFLECT (digest) → append datoms to the log (+ bb CLI)"}]
 
  :actor/lex
  [{:lex/id "organismBeat"}
@@ -79,8 +79,8 @@
  :actor/tests
  {:runner "babashka"
   :cmd "./bb test"
-  :suites ["test/uzu/methods/test_model.cljc" "test/uzu/methods/test_ledger.cljc" "test/uzu/methods/test_metabolism.cljc" "test/uzu/methods/test_epochs.cljc" "test/uzu/methods/test_world.cljc" "test/uzu/methods/test_landscape.cljc"
-           "test/uzu/methods/test_measure.cljc" "test/uzu/methods/test_validate.cljc" "test/uzu/methods/test_lexicons.cljc"
-           "test/uzu/methods/test_digest.cljc" "test/uzu/methods/test_robustness.cljc" "test/uzu/methods/test_properties.cljc" "test/uzu/methods/test_scorecard.cljc"
-           "test/uzu/methods/test_kotoba.cljc" "test/uzu/methods/test_query.cljc" "test/uzu/methods/test_autorun.cljc" "test/uzu/methods/test_viz.cljc"]
+  :suites ["test/uzu/methods/test_model.cljk" "test/uzu/methods/test_ledger.cljk" "test/uzu/methods/test_metabolism.cljk" "test/uzu/methods/test_epochs.cljk" "test/uzu/methods/test_world.cljk" "test/uzu/methods/test_landscape.cljk"
+           "test/uzu/methods/test_measure.cljk" "test/uzu/methods/test_validate.cljk" "test/uzu/methods/test_lexicons.cljk"
+           "test/uzu/methods/test_digest.cljk" "test/uzu/methods/test_robustness.cljk" "test/uzu/methods/test_properties.cljk" "test/uzu/methods/test_scorecard.cljk"
+           "test/uzu/methods/test_kotoba.cljk" "test/uzu/methods/test_query.cljk" "test/uzu/methods/test_autorun.cljk" "test/uzu/methods/test_viz.cljk"]
   :status "106 tests / 240 assertions green (babashka)"}}

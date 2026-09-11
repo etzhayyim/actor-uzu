@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — the dissipative loop: perceive → infer → plan → act → metabolize → live-or-die.
 (ns uzu.methods.metabolism
   "metabolism.cljc — uzu 渦 heartbeat: the coupling of information and energy into one

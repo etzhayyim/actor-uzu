@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — seed ↔ ontology integrity validator (self-validating substrate).
 (ns uzu.methods.validate
   "validate.cljc — uzu 渦 integrity checker (ADR-2606211500).

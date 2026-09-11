@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — information-log (content-addressed commit-DAG) tests.
-;; Run: bb --classpath 20-actors ./methods/test_kotoba.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_kotoba.cljc
 (ns uzu.methods.test-kotoba
   (:require [kotoba.lang.text] [uzu.methods.kotoba :as k]
             [clojure.test :refer [deftest is run-tests]]

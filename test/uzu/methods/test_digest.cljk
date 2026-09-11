@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — colony self-reflection (digest) tests.
-;; Run: bb --classpath 20-actors ./methods/test_digest.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_digest.cljc
 (ns uzu.methods.test-digest
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.metabolism :as metab]

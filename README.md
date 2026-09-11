@@ -9,7 +9,7 @@ compatibility redirect.
 This is the standalone actor repository. Canonical metadata, ontology,
 lexicons, and seed data are EDN. Runtime code lives under `src/uzu`, tests
 under `test/uzu`, and external wire projections belong only under `wire/`.
-Run the full suite with `bb test`.
+Run the full suite with `kbb -M:test`.
 
 > *存在とは、エネルギー流が情報構造を作り、その情報構造がエネルギー流を再配線するプロセスである。*
 > Being is the process by which energy flow forms an information structure that re-wires the
@@ -112,17 +112,17 @@ loop + the organism trajectories to a self-contained canvas (`out/energy-field.h
 
 ```bash
 # live the organisms + measure the field + self-reflect, append to the information log
-bb --classpath 20-actors ./methods/autorun.cljc
+kbb --classpath 20-actors ./methods/autorun.cljc
 
 # the colony reasons about itself / audits itself / maps its viability envelope
-bb --classpath 20-actors ./methods/digest.cljc       # colony self-reflection
-bb --classpath 20-actors ./methods/scorecard.cljc    # maturity self-audit (manifest↔fs)
-bb --classpath 20-actors ./methods/landscape.cljc    # meaning × niche survival matrix
-bb --classpath 20-actors ./methods/world.cljc        # niche presets + richness
-bb --classpath 20-actors ./methods/validate.cljc     # seed↔ontology integrity
+kbb --classpath 20-actors ./methods/digest.cljc       # colony self-reflection
+kbb --classpath 20-actors ./methods/scorecard.cljc    # maturity self-audit (manifest↔fs)
+kbb --classpath 20-actors ./methods/landscape.cljc    # meaning × niche survival matrix
+kbb --classpath 20-actors ./methods/world.cljc        # niche presets + richness
+kbb --classpath 20-actors ./methods/validate.cljc     # seed↔ontology integrity
 
 # generate the visualization
-bb --classpath 20-actors ./methods/viz.cljc          # → out/energy-field.html
+kbb --classpath 20-actors ./methods/viz.cljc          # → out/energy-field.html
 
 # tests (94 tests / 216 assertions, 15 suites)
 ./bb test

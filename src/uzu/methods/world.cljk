@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — deterministic world-tape generator: build niches to test organisms against.
 (ns uzu.methods.world
   "world.cljc — uzu 渦 world-tape generator (ADR-2606211500).

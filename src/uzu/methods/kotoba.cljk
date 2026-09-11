@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — content-addressed append-only commit-DAG (the INFORMATION log).
 (ns uzu.methods.kotoba
   "kotoba.cljc — uzu 渦 append-only INFORMATION log writer (content-addressed)

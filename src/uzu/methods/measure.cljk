@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — measure real-world energy flows in HONEST, SEPARATE units (never collapsed).
 (ns uzu.methods.measure
   "measure.cljc — uzu 渦 real-world energy-flow measurement (ADR-2606211500).

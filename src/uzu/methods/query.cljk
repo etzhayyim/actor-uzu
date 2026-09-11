@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — read-back the information log: EAVT index + as-of time-travel (the log is queryable).
 (ns uzu.methods.query
   "query.cljc — uzu 渦 information-log read path (ADR-2606211500).

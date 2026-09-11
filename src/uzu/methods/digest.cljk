@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — colony self-reflection: the organism reasons about its own life + field.
 (ns uzu.methods.digest
   "digest.cljc — uzu 渦 colony self-reflection (ADR-2606211500).

@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — energy ledger: the ENERGY half (conserved, depletes; NOT information).
 (ns uzu.methods.ledger
   "ledger.cljc — uzu 渦 metabolic energy ledger (ADR-2606211500).

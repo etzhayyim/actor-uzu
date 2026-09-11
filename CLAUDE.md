@@ -47,7 +47,7 @@ informational (bit/s), experiential/meaning (index) — as one open dissipative 
 - State = content-addressed EAVT commit-DAG (`kotoba.cljc`), verify-chain tamper-evident,
   idempotent-by-content heartbeat (`autorun.cljc`).
 - Run tests: `./bb test` (7 suites; **42 tests / 111 assertions green**).
-- Generate the visualization: `bb --classpath 20-actors ./methods/viz.cljc`.
+- Generate the visualization: `kbb --classpath 20-actors ./methods/viz.cljc`.
 
 ## Roster context
 

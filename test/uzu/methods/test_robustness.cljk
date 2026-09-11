@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — robustness / adversarial property tests (invariants over input grids).
-;; Run: bb --classpath 20-actors ./methods/test_robustness.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_robustness.cljc
 (ns uzu.methods.test-robustness
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.model :as m]

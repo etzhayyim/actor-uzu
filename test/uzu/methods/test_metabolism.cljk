@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — metabolism (the dissipative loop) tests: survival = fit of meaning to world.
-;; Run: bb --classpath 20-actors ./methods/test_metabolism.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_metabolism.cljc
 (ns uzu.methods.test-metabolism
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.metabolism :as metab]

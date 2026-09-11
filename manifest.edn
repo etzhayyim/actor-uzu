@@ -64,7 +64,7 @@
  {:viz/file "out/energy-field.html"
   :viz/kind :self-contained-canvas
   :viz/generated true
-  :viz/cmd "bb --classpath 20-actors ./methods/viz.cljc"
+  :viz/cmd "kbb --classpath 20-actors ./methods/viz.cljc"
   :viz/note "Generated from the seed (nothing hand-copied): four incommensurable unit-class lanes + circulation loop + organism energy trajectories."}
 
  :actor/seed

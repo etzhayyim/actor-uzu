@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — visualization tests (data-driven; JSON encoding; honest unit boundary).
-;; Run: bb --classpath 20-actors ./methods/test_viz.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_viz.cljc
 (ns uzu.methods.test-viz
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.metabolism :as metab]

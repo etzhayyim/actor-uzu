@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; uzu 渦 — world-tape generator + niche tests: a good model needs a net-positive niche.
-;; Run: bb --classpath 20-actors ./methods/test_world.cljc
+;; Run: kbb --classpath 20-actors ./methods/test_world.cljc
 (ns uzu.methods.test-world
   (:require [uzu.methods.world :as w]
             [uzu.methods.uzu-edn :as ue]

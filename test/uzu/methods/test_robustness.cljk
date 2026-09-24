@@ -7,7 +7,7 @@
             [uzu.methods.ledger :as l]
             [uzu.methods.metabolism :as metab]
             [uzu.methods.measure :as measure]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def seed (ue/classify (ue/load-edn "data/seed.kotoba.edn")))
 (def tape (:tape seed))

@@ -5,7 +5,7 @@
   (:require [uzu.methods.scorecard :as sc]
             [clojure.edn :as edn]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def manifest (edn/read-string (slurp "manifest.edn")))
 (def actor-dir ".")

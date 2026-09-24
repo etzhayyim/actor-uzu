@@ -5,7 +5,7 @@
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.landscape :as ls]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def meanings (mapv #(select-keys % [:id :prefs]) (ue/organisms "data/seed.kotoba.edn")))
 (def rows (ls/survey meanings (ls/default-niches) 3))

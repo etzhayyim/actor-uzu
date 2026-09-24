@@ -7,7 +7,7 @@
             [uzu.methods.measure :as measure]
             [uzu.methods.digest :as dg]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def seed (ue/classify (ue/load-edn "data/seed.kotoba.edn")))
 (def lives (mapv #(metab/live % (:tape seed)) (:organisms seed)))

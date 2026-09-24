@@ -4,7 +4,7 @@
 (ns uzu.methods.test-measure
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.measure :as measure]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def seed (ue/classify (ue/load-edn "data/seed.kotoba.edn")))
 (def flows (:flows seed))

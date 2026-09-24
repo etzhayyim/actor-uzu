@@ -4,7 +4,7 @@
 (ns uzu.methods.test-validate
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.validate :as v]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             [kotoba.test :refer [deftest is run-tests]]))
 
 (def ont (ue/ontology-map (edn/read-string (slurp "schema/ontology.uzu.edn"))))

@@ -17,7 +17,7 @@
             [uzu.methods.measure :as measure]
             [uzu.methods.digest :as digest]
             [uzu.methods.kotoba :as k]
-            #?(:clj [clojure.edn :as edn])))
+            #?(:clj [kotoba.lang.edn :as edn])))
 
 (defn assess
   "Pure: run all organisms across the tape, measure the field, and SELF-REFLECT (the colony

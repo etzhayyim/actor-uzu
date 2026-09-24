@@ -19,7 +19,7 @@
   (:require [uzu.methods.measure :as measure]
             [uzu.methods.metabolism :as metab]
             [kotoba.lang.text :as str]
-            #?(:clj [clojure.edn :as edn])
+            #?(:clj [kotoba.lang.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 
 ;; ── minimal JSON encoder (self-contained) ─────────────────────────────────────

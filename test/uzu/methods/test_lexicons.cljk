@@ -2,7 +2,7 @@
 ;; uzu 渦 — lexicon ↔ manifest ↔ ontology parity (structurally forbids vocab drift).
 ;; Run: kbb --classpath 20-actors ./methods/test_lexicons.cljc
 (ns uzu.methods.test-lexicons
-  (:require [clojure.edn :as edn]
+  (:require [kotoba.lang.edn :as edn]
             [kotoba.test :refer [deftest is run-tests]]
             [uzu.methods.uzu-edn :as ue]))
 

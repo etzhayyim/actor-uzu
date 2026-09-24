@@ -3,7 +3,7 @@
 ;; Run: kbb --classpath 20-actors ./methods/test_scorecard.cljc
 (ns uzu.methods.test-scorecard
   (:require [uzu.methods.scorecard :as sc]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is run-tests]]))
 

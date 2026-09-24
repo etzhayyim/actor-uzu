@@ -19,7 +19,7 @@
   (:require [kotoba.lang.text :as str]
             [uzu.methods.uzu-edn :as ue]
             #?(:clj [kotoba.lang.edn :as edn])
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (defn- in01? [x] (and (number? x) (<= 0.0 (double x) 1.0)))
 (defn- dups [xs] (->> xs frequencies (filter (fn [[_ n]] (> n 1))) (map key) vec))

@@ -4,7 +4,7 @@
 (ns uzu.methods.test-kotoba
   (:require [kotoba.lang.text] [uzu.methods.kotoba :as k]
             [kotoba.test :refer [deftest is run-tests]]
-            [clojure.java.io :as io]))
+            [kotoba.io :as io]))
 
 (def ds1 [[":db/add" "uzu:organism/a" ":uzu.organism/alive" true]
           [":db/add" "uzu:organism/a" ":uzu.organism/final-energy" 6.6]])
@@ -27,7 +27,7 @@
     (is (= "" (get (first txs) ":tx/prev")) "genesis tx has empty prev")
     (is (= c1 (get (second txs) ":tx/prev")) "second tx chains to the first's CID via prev")
     (is (= ds1 (get (first txs) ":tx/datoms")) "datoms survive the EDN roundtrip")
-    (.delete (io/file p))))
+    (io/delete (io/file p))))
 
 (deftest verify-chain-detects-tamper
   (let [p (tmp)]
@@ -37,7 +37,7 @@
     ;; corrupt the file: flip a value
     (spit p (kotoba.lang.text/replace (slurp p) "6.6" "9.9"))
     (is (false? (:ok (k/verify-chain p))) "a tampered datom breaks the content-address")
-    (.delete (io/file p))))
+    (io/delete (io/file p))))
 
 (deftest empty-log-is-clean
   (let [p (tmp)]

@@ -3,7 +3,7 @@
 ;; Run: kbb --classpath 20-actors ./methods/test_lexicons.cljc
 (ns uzu.methods.test-lexicons
   (:require [clojure.edn :as edn]
-            [clojure.test :refer [deftest is run-tests]]
+            [kotoba.test :refer [deftest is run-tests]]
             [uzu.methods.uzu-edn :as ue]))
 
 (def manifest (edn/read-string (slurp "manifest.edn")))

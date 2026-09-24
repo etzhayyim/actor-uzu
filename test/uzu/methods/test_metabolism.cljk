@@ -4,7 +4,7 @@
 (ns uzu.methods.test-metabolism
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.metabolism :as metab]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def seed-path "data/seed.kotoba.edn")
 (def seed (ue/classify (ue/load-edn seed-path)))

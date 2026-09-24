@@ -9,7 +9,7 @@
             [uzu.methods.measure :as measure]
             [uzu.methods.world :as w]
             [uzu.methods.digest :as dg]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def seed (ue/classify (ue/load-edn "data/seed.kotoba.edn")))
 (defn org [id] (first (filter #(= id (:id %)) (:organisms seed))))

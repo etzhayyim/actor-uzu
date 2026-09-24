@@ -5,7 +5,7 @@
   (:require [uzu.methods.uzu-edn :as ue]
             [uzu.methods.autorun :as auto]
             [uzu.methods.kotoba :as k]
-            [clojure.test :refer [deftest is run-tests]]
+            [kotoba.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]))
 
 (def seed (ue/classify (ue/load-edn "data/seed.kotoba.edn")))

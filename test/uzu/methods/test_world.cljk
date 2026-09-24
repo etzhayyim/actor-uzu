@@ -7,7 +7,7 @@
             [uzu.methods.metabolism :as metab]
             [uzu.methods.validate :as v]
             [clojure.edn :as edn]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def ont (ue/ontology-map (edn/read-string (slurp "schema/ontology.uzu.edn"))))
 (def kurage (first (filter #(= "kurage" (:id %)) (ue/organisms "data/seed.kotoba.edn"))))

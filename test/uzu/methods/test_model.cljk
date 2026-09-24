@@ -3,7 +3,7 @@
 ;; Run: kbb --classpath 20-actors ./methods/test_model.cljc
 (ns uzu.methods.test-model
   (:require [uzu.methods.model :as m]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def abundant-sig (get m/regime-signature :abundant))
 (def hostile-sig  (get m/regime-signature :hostile))

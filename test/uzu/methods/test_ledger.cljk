@@ -3,7 +3,7 @@
 ;; Run: kbb --classpath 20-actors ./methods/test_ledger.cljc
 (ns uzu.methods.test-ledger
   (:require [uzu.methods.ledger :as l]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def costs l/default-costs)
 

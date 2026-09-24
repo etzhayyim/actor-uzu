@@ -18,7 +18,7 @@
     • circulation is a closed loop (every flow has an out-edge)            (open system circulates)"
   (:require [kotoba.lang.text :as str]
             [uzu.methods.uzu-edn :as ue]
-            #?(:clj [clojure.edn :as edn])
+            #?(:clj [kotoba.lang.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 
 (defn- in01? [x] (and (number? x) (<= 0.0 (double x) 1.0)))

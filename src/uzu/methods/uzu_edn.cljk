@@ -5,7 +5,7 @@
   Reads the actor's own EDN substrate (kotoba/seed.edn) and splits by :type into the
   world tape, organism configs, measured flows, and circulation edges. Sibling of the
   ugachi/busshi *_edn loaders. Dependency-free (clojure.edn; file I/O :clj-only)."
-  (:require [clojure.edn :as edn]
+  (:require [kotoba.lang.edn :as edn]
             #?(:clj [clojure.java.io :as io])))
 
 (defn parse-edn [text] (edn/read-string text))

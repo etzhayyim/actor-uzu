@@ -6,7 +6,7 @@
             [uzu.methods.autorun :as auto]
             [uzu.methods.kotoba :as k]
             [kotoba.test :refer [deftest is run-tests]]
-            [clojure.java.io :as io]))
+            [kotoba.io :as io]))
 
 (def seed (ue/classify (ue/load-edn "data/seed.kotoba.edn")))
 (defn tmp [] (str (System/getProperty "java.io.tmpdir") "/uzu-auto-" (gensym) ".kotoba.edn"))
@@ -35,14 +35,14 @@
     (is (= (:head r1) (:head r2)) "head unchanged on a no-op")
     (is (= 1 (:length (k/verify-chain p))) "log has exactly one tx")
     (is (:ok (k/verify-chain p)) "chain verifies")
-    (.delete (io/file p))))
+    (io/delete (io/file p))))
 
 (deftest determinism-same-inputs-same-cid
   (let [p1 (tmp) p2 (tmp)
         r1 (auto/beat {:seed seed :tx-id "x" :as-of "y" :log-path p1})
         r2 (auto/beat {:seed seed :tx-id "x" :as-of "y" :log-path p2})]
     (is (= (:head r1) (:head r2)) "no wall clock / no randomness ⇒ identical content-address")
-    (.delete (io/file p1)) (.delete (io/file p2))))
+    (io/delete (io/file p1)) (io/delete (io/file p2))))
 
 (let [{:keys [fail error]} (run-tests 'uzu.methods.test-autorun)]
   (when (pos? (+ fail error)) (System/exit 1)))

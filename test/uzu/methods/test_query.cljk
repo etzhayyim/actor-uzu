@@ -7,7 +7,7 @@
             [uzu.methods.query :as q]
             [uzu.methods.kotoba :as k]
             [kotoba.test :refer [deftest is run-tests]]
-            [clojure.java.io :as io]))
+            [kotoba.io :as io]))
 
 (def seed (ue/classify (ue/load-edn "data/seed.kotoba.edn")))
 (defn tmp [] (str (System/getProperty "java.io.tmpdir") "/uzu-q-" (gensym) ".kotoba.edn"))
@@ -32,7 +32,7 @@
       (is (= "USD/yr" (get gdp ":uzu.flow/unit")) "a measured flow reads back with its native unit")
       (is (= true (get gdp ":uzu.flow/reference-only"))))
     (is (pos? (count (q/entities-of-kind (q/index-of-log p) "uzu:organism/"))))
-    (.delete (io/file p))))
+    (io/delete (io/file p))))
 
 ;; ── as-of time-travel ────────────────────────────────────────────────────────
 (deftest as-of-reconstructs-history

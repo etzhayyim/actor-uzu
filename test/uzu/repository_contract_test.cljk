@@ -1,6 +1,6 @@
 (ns uzu.repository-contract-test
   (:require [kotoba.lang.edn :as edn]
-            [clojure.java.io :as io]
+            [kotoba.io :as io]
             [kotoba.test :refer [deftest is]]))
 
 (def root (io/file (System/getProperty "user.dir")))
@@ -11,5 +11,5 @@
     (is (some? (edn/read-string (slurp (io/file root path)))) path)))
 
 (deftest no-legacy-artifacts
-  (is (empty? (filter #(re-find #"\\.(?:go|sh|json|jsonld|bpmn)$" (.getName %))
-                      (filter #(.isFile %) (file-seq root))))))
+  (is (empty? (filter #(re-find #"\\.(?:go|sh|json|jsonld|bpmn)$" (io/file-name %))
+                      (filter #(io/file? %) (io/file-seq root))))))

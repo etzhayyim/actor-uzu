@@ -31,7 +31,7 @@
   霊性) is a G7-gated operator step — the loop here reads a local seed and does no network."
   (:require [kotoba.lang.text :as str]
             #?(:clj [kotoba.lang.edn :as edn])
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (def unit-classes
   "The four flow classes and their (incommensurable) units."

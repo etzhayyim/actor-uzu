@@ -6,7 +6,7 @@
   world tape, organism configs, measured flows, and circulation edges. Sibling of the
   ugachi/busshi *_edn loaders. Dependency-free (clojure.edn; file I/O :clj-only)."
   (:require [kotoba.lang.edn :as edn]
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (defn parse-edn [text] (edn/read-string text))
 

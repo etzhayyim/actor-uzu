@@ -11,7 +11,7 @@
   + be circular); it reports the manifest's declared test status and verifies the files are there."
   (:require [kotoba.lang.text :as str]
             #?(:clj [kotoba.lang.edn :as edn])
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (defn tally
   "Pure inventory counts read from the manifest map."
@@ -33,7 +33,7 @@
      actor-dir e.g. \".\"; lex-root e.g. \"00-contracts/lexicons/com/etzhayyim/uzu\".
      Returns {:ok :missing-methods :missing-suites :missing-lexicons}."
      [manifest actor-dir lex-root]
-     (let [exists? (fn [f] (.exists (io/file f)))
+     (let [exists? (fn [f] (io/exists? (io/file f)))
            miss-m (->> (:actor/methods manifest)
                        (remove #(exists? (io/file actor-dir (:method/file %))))
                        (mapv :method/file))

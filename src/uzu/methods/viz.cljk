@@ -20,7 +20,7 @@
             [uzu.methods.metabolism :as metab]
             [kotoba.lang.text :as str]
             #?(:clj [kotoba.lang.edn :as edn])
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 ;; ── minimal JSON encoder (self-contained) ─────────────────────────────────────
 (defn- jesc [s]
@@ -171,7 +171,7 @@ draw();
      "Render the energy-field HTML to `out-path` from lived organisms + flows/edges."
      [lives flows edges out-path]
      (let [f (io/file out-path)]
-       (when-let [p (.getParentFile f)] (.mkdirs p))
+       (when-let [p (io/parent-file f)] (io/mkdirs p))
        (spit f (html (payload lives flows edges)))
        out-path)))
 

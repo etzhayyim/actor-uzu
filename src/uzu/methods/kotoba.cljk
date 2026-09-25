@@ -13,7 +13,7 @@
   as-of (no wall clock) → resume-safe. No-server-key: this writer holds no key and does
   NO network I/O — it only appends to a local file."
   (:require [kotoba.bytes :as kbytes] [kotoba.lang.text :as str]
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (defn add [entity attr value] [":db/add" entity attr value])
 
@@ -120,8 +120,8 @@
    (do
      (defn append-tx [tx log-path]
        (let [f (io/file log-path)]
-         (when-let [p (.getParentFile f)] (.mkdirs p))
-         (when-not (.exists f)
+         (when-let [p (io/parent-file f)] (io/mkdirs p))
+         (when-not (io/exists? f)
            (spit f (str ";; uzu 渦 — INFORMATION LOG (append-only, content-addressed EAVT "
                         "commit-DAG of organism beats). Generated; DO NOT hand-edit. "
                         "Copyable + non-conserved (the energy ledger is the conserved twin). "
@@ -131,7 +131,7 @@
 
      (defn read-log [log-path]
        (let [f (io/file log-path)]
-         (if-not (.exists f) []
+         (if-not (io/exists? f) []
                  (->> (str/split-lines (slurp f))
                       (map str/trim)
                       (remove #(or (empty? %) (str/starts-with? % ";")))
